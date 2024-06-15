@@ -15,14 +15,14 @@ let intervalo = null;
 //BOTÃO CHECK DE LIGAR E DESLIGAR A MÚSICA
 const musicCheckbox = document.querySelector('#alternar-musica');
 //REFÊNCIA DA MÚSICA
-const music = new Audio('./sons/Way-Maker-Instrumental-Worship-Fundo-Musical-Piano-Pads.mp3');
+const music = new Audio('./sons/WayMakerInstrumentalPiano.mp3');
 //MÚSICA TOCA SEM PARAR - entra em loop
 music.loop = true;
 
 //REFERÊNCIA DOS SONS
 const beep = new Audio('./sons/beep.mp3');
-const pause = new Audio('./sons/pause.mp3');
-const play = new Audio('./sons/play.wav');
+//const pause = new Audio('./sons/pause.mp3');
+//const play = new Audio('./sons/play.wav');
 
 //CONTROLE DA MUÍCA - SE PAUSADA, AO CLICAR NO BOTÃO DESPAUSA E VICE-VERSA
 //change É O EVENTO DE CLIQUE QUANDO SE TRABALHA COM  
@@ -122,7 +122,7 @@ const contagemRegressiva = () => {
 function iniciarPausar(){
     //EVENTOS DE PLAY
     if(intervalo){
-        pause.play();
+        //pause.play();
         zerar();
         
         startPauseBtn.innerHTML = 
@@ -136,7 +136,7 @@ function iniciarPausar(){
 
     //EVENTOS DE PAUSE
     intervalo = setInterval(contagemRegressiva, 1000);
-    play.play();
+    //play.play();
 
     startPauseBtn.innerHTML = 
     `
