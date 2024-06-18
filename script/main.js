@@ -135,8 +135,9 @@ function iniciarPausar(){
     }
 
     //EVENTOS DE PAUSE
-    intervalo = setInterval(contagemRegressiva, 1000);
     play.play();
+    
+    intervalo = setInterval(contagemRegressiva, 1000);
 
     startPauseBtn.innerHTML = 
     `
