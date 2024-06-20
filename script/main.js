@@ -51,7 +51,7 @@ focoBtn.addEventListener('click', () => {
 //AJUSTAR PARA O MODO INTERVALO CURTO COM BASE NO CLICK DO BOTÃO
 descansoCurtoBtn.addEventListener('click', () => {
     tempoDecorridoSegundos = 300;
-    alterarContexto('descanso-longo');
+    alterarContexto('descanso-curto');
     //ADICIONAR A CLASE .active DANDO FOCO AO BOTÃO QUANDO FOR CLICADO
     descansoCurtoBtn.classList.add('active');
 });
@@ -59,7 +59,7 @@ descansoCurtoBtn.addEventListener('click', () => {
 //AJUSTAR PARA O MODO DE INTERVALO LONGO COM BASE NO CLICK DO BOTÃO
 descansoLongoBtn.addEventListener('click', () => {
     tempoDecorridoSegundos = 600;
-    alterarContexto('descanso-curto');
+    alterarContexto('descanso-longo');
     //ADICIONAR A CLASE .active DANDO FOCO AO BOTÃO QUANDO FOR CLICADO
     descansoLongoBtn.classList.add('active');
 });
@@ -136,7 +136,7 @@ function iniciarPausar(){
 
     //EVENTOS DE PAUSE
     play.play();
-    
+
     intervalo = setInterval(contagemRegressiva, 1000);
 
     startPauseBtn.innerHTML = 
