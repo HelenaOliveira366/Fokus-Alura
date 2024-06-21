@@ -131,6 +131,9 @@ function iniciarPausar(){
             <span>Começar</span>
         `;
 
+        //MÚSIICA DE FUNDO PARA QUANDO O CRONOMETRO É PAUSADO
+        music.pause();
+
         return;
     }
 
